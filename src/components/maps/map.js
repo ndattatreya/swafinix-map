@@ -5,32 +5,42 @@ import React from 'react';
 const ClientMap = () => {
     return (
         <div className="max-w-7xl mx-auto px-4 py-8">
-            <div className="grid grid-cols-5 items-start">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-2 items-start">
                 {/* Office Information */}
-                <div className="bg-blue-900 text-white p-6 rounded-lg col-span-1">
-                    <h2 className="text-3xl font-bold mb-4">Visit Our Office</h2>
-                    <div className="space-y-4">
+                <div className="bg-blue-900 text-white p-5 rounded-lg md:col-span-1">
+                    <h2 className="font-urbanist text-2xl md:text-3xl font-bold mb-4 text-center md:text-left">
+                        Visit Our Office
+                    </h2>
+                    <div className="space-y-6">
                         <div>
-                            <h3 className="font-semibold text-lg">Address</h3>
-                            <p className="text-sm">
+                            <h3 className="font-urbanist font-semibold text-lg text-center md:text-left">
+                                Address
+                            </h3>
+                            <p className="text-sm text-center md:text-left">
                                 4TH FLOOR, 44, SAKET BUILDING, MULLICK BAZAR, <br />
                                 MOTHER TERESA SARANI, PARK STREET AREA, <br />
                                 Kolkata, West Bengal, 700016
                             </p>
                         </div>
                         <div>
-                            <h3 className="font-semibold text-lg">Business Hours</h3>
-                            <p className="text-sm">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                            <p className="text-sm">Saturday: 9:00 AM - 1:00 PM</p>
-                            <p className="text-sm">Sunday: Closed</p>
+                            <h3 className="font-urbanist font-semibold text-lg text-center md:text-left">
+                                Business Hours
+                            </h3>
+                            <p className="text-sm text-center md:text-left">
+                                Monday - Friday: 9:00 AM - 6:00 PM
+                            </p>
+                            <p className="text-sm text-center md:text-left">
+                                Saturday: 9:00 AM - 1:00 PM
+                            </p>
+                            <p className="text-sm text-center md:text-left">Sunday: Closed</p>
                         </div>
                     </div>
                 </div>
 
                 {/* Map */}
-                <div className="bg-white p-2 rounded-lg overflow-hidden col-span-4">
+                <div className="bg-white p-2 rounded-lg overflow-hidden md:col-span-4">
                     <iframe
-                        className="w-full h-[380px] rounded-lg"
+                        className="w-full h-[250px] sm:h-[300px] md:h-[380px] rounded-lg"
                         style={{ border: 0 }}
                         loading="lazy"
                         allowFullScreen
